@@ -3,10 +3,10 @@
 
 var gulp = require('gulp')
 var flatten = require('gulp-flatten')
-var flattenRequires = require('../')
+var flattenRequires = require('./')
 
 gulp.task('test', function () {
-  return gulp.src('./**/*.js')
+  return gulp.src('./test/**/*.js')
     .pipe(flatten())
     .pipe(flattenRequires())
     .pipe(gulp.dest('./flattened'))
