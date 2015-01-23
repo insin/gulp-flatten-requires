@@ -1,0 +1,27 @@
+{
+  "name": "gulp-flatten-requires",
+  "version": "1.0.0",
+  "description": "Flattens relative require(./path/<module>) calls to require('./<module>')",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-util": "^3.0.2",
+    "recast": "^0.9.15",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "tape": "^3.4.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "gulp-plugin",
+    "flatten",
+    "rewrite",
+    "require",
+    "requires"
+  ]
+}
