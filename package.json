@@ -16,6 +16,10 @@
   },
   "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/insin/gulp-flatten-requires.git"
+  },
   "keywords": [
     "gulp",
     "gulp-plugin",
