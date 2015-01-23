@@ -4,11 +4,11 @@ Rewrites relative `require()` calls to use flat paths in the same directory.
 
 Whatever quote type was used in the original `require()` call will be preserved.
 
-| Before                  | After          |
-| ----------------------- | -------------- |
-| require('./path/to/a')  | require('./a') |
-| require('../path/to/b') | require('./b') |
-| require("./c")          | require("./c") |
+| Before                    | After            |
+| ------------------------- | ---------------- |
+| `require('./path/to/a')`  | `require('./a')` |
+| `require('../path/to/b')` | `require('./b')` |
+| `require("./c")`          | `require("./c")` |
 
 ## Install
 
@@ -29,8 +29,8 @@ var gulp = require('gulp')
 var flatten = require('gulp-flatten')
 var flattenRequires = require('gulp-flatten-requires')
 
-gulp.task('copy-npm', function () {
-  return gulp.src(./build/modules/**/*.js)
+gulp.task('copy-npm', function() {
+  return gulp.src('./build/modules/**/*.js')
     .pipe(flatten())
     .pipe(flattenRequires())
     .pipe(gulp.dest('./npm'))
